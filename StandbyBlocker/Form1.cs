@@ -121,9 +121,22 @@ namespace StandbyBlocker
         }
 
 
+        bool standbyLocked = false;
+
         private void BtnStandby_Click(object sender, EventArgs e)
         {
-
+            if (standbyLocked)
+            {
+                BtnStandby.Text = "Standby &verhindern";
+                EnableConstantDisplayAndPower(false, "");
+                standbyLocked = false;
+            }
+            else
+            {
+                BtnStandby.Text = "Standby &erlauben";
+                EnableConstantDisplayAndPower(true, "Gesperrt durch StandbyBlocker");
+                standbyLocked = true;
+            }
         }
     }
 }
