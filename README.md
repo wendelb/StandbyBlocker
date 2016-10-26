@@ -7,3 +7,5 @@ Translations are available for German and English.
 ## License
 
 This project is licensed under the Apache License 2.0
+
+The icon is from [IconFinder](https://www.iconfinder.com/icons/99874/power_standby_icon) and is licensed _Free for non commercial use_
