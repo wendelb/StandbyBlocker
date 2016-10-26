@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace StandbyBlocker
 {
-    public partial class Form1 : Form
+
+    public partial class FrmStandby : Form
     {
-        public Form1()
+        public FrmStandby()
         {
             InitializeComponent();
+        }
+
+        private void BtnStandby_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

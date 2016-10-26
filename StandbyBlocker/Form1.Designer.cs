@@ -1,6 +1,6 @@
 ﻿namespace StandbyBlocker
 {
-    partial class Form1
+    partial class FrmStandby
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStandby));
+            this.BtnStandby = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            //
+            // BtnStandby
+            //
+            resources.ApplyResources(this.BtnStandby, "BtnStandby");
+            this.BtnStandby.Name = "BtnStandby";
+            this.BtnStandby.UseVisualStyleBackColor = true;
+            this.BtnStandby.Click += new System.EventHandler(this.BtnStandby_Click);
+            //
+            // FrmStandby
+            //
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.Controls.Add(this.BtnStandby);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FrmStandby";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnStandby;
     }
 }
 
