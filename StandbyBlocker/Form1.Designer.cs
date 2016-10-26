@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStandby));
             this.BtnStandby = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            //
+            // 
             // BtnStandby
-            //
+            // 
             resources.ApplyResources(this.BtnStandby, "BtnStandby");
             this.BtnStandby.Name = "BtnStandby";
             this.BtnStandby.UseVisualStyleBackColor = true;
             this.BtnStandby.Click += new System.EventHandler(this.BtnStandby_Click);
-            //
+            // 
             // FrmStandby
-            //
+            // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BtnStandby);
