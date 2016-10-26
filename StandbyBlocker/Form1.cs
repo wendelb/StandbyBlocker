@@ -127,14 +127,14 @@ namespace StandbyBlocker
         {
             if (standbyLocked)
             {
-                BtnStandby.Text = "Standby &verhindern";
+                BtnStandby.Text = strings.PreventStandby;
                 EnableConstantDisplayAndPower(false, "");
                 standbyLocked = false;
             }
             else
             {
-                BtnStandby.Text = "Standby &erlauben";
-                EnableConstantDisplayAndPower(true, "Gesperrt durch StandbyBlocker");
+                BtnStandby.Text = strings.AllowStandby;
+                EnableConstantDisplayAndPower(true, strings.BlockedText);
                 standbyLocked = true;
             }
         }
